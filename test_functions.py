@@ -11,7 +11,7 @@ except ImportError as e:
 try:
     from grammar import capitalize
 except ImportError as e:
-    print("Could not import a function called 'decode' from 'cipher.py'")
+    print("Could not import a function called 'capitalize' from 'grammar.py'")
 
 try:
     from calculator import calculator

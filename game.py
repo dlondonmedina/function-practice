@@ -5,4 +5,4 @@
 # If the user's guess is too low, the program should print "Too Low!"
 # If the user's guess is invalid--for instance, they guess 'bob', the program should print "Invalid Input!"
 # If the user's guess is correct, the program should print "You Win!" and stop the game.
-# Run python3 -m unittest test_game.py to check your work.
+# Run python3 -m unittest test_functions.py in your terminal to check your work.
