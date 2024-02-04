@@ -46,7 +46,7 @@ class FunctionsTest(unittest.TestCase):
             output = io.StringIO()
             with redirect_stdout(output):
                 calculator(10, 3, "^")
-            self.assertEqual(output.getvalue(), "Invalid Operator")
+            self.assertEqual(output.getvalue().rstrip("\n"), "Invalid Operator")
         except NameError as e:
             self.fail("The function 'calculator' is not defined")
         
