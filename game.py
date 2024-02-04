@@ -6,3 +6,20 @@
 # If the user's guess is invalid--for instance, they guess 'bob', the program should print "Invalid Input!"
 # If the user's guess is correct, the program should print "You Win!" and stop the game.
 # Run python3 -m unittest test_functions.py in your terminal to check your work.
+
+def play(num):
+    count = 0
+    while True and count < 100:
+        count += 1
+        try:
+            guess = int(input("Guess a number"))
+        except ValueError as err:
+            print("Invalid Input!")
+            continue
+        if guess < num:
+            print("Too Low!")
+        elif guess > num:
+            print("Too High!")
+        else:
+            print("You Win!")
+            break
