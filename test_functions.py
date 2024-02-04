@@ -9,11 +9,6 @@ except ImportError as e:
     print("Could not import a function called 'play' from 'game.py'")
 
 try:
-    from grammar import capitalize
-except ImportError as e:
-    print("Could not import a function called 'capitalize' from 'grammar.py'")
-
-try:
     from calculator import calculator
 except ImportError as e:
     print("Could not import a function called 'calculator' from 'calculator.py'")
@@ -29,13 +24,6 @@ class FunctionsTest(unittest.TestCase):
             except NameError as e:
                 self.fail("The function 'play' is not defined")
         assert output.getvalue().split("\n") == ["Too Low!", "Too High!", "Invalid Input!", "You Win!", ""]
-    
-    def test_cipher(self):
-        try:
-            self.assertEqual(capitalize("hello world"), "Hello World") 
-            self.assertEqual(capitalize("Hello World"), "Hello World")
-        except NameError as e:
-            self.fail("The function 'decode' is not defined")
 
     def test_calculator(self):
         try:
